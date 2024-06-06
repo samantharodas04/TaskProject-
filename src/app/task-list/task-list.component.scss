@@ -1,0 +1,24 @@
+.priority-container {
+  display: flex;
+  align-items: center;
+}
+
+.priority-box {
+  width: 20px; /* Ajusta el ancho según sea necesario */
+  height: 20px; /* Ajusta la altura según sea necesario */
+  margin-right: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.alta {
+  background-color: #FF0000;
+}
+
+.media {
+  background-color: #FFFF00;
+}
+
+.baja {
+  background-color: #00ff00;
+}

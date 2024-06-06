@@ -1,0 +1,25 @@
+<app-toolbar></app-toolbar>
+<div class="task-list">
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Priority</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>User</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks">
+        <td> <button (click)="onButtonClick('task.id')">{{ task.title }}</button></td>
+        <td>{{ task.priority }}</td>
+        <td>{{ task.description }}</td>
+        <td>{{ task.date }}</td>
+        <td>{{ task.usuario }}</td>
+        <td>{{ task.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
